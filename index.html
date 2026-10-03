@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1d3557">
+  <meta name="description" content="Aplicación parroquial de San Juan Bosco — San Martín, San Juan.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>San Juan Bosco · San Martín</title>
+</head>
+<body>
+  <header class="topbar">
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <div class="brand">
+      <span class="brand-mark">✝</span>
+      <div><strong>San Juan Bosco</strong><small>San Martín · San Juan</small></div>
+    </div>
+    <button class="install-btn" id="installBtn" hidden>Instalar</button>
+  </header>
+
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head">
+      <strong>Parroquia San Juan Bosco</strong>
+      <button id="closeMenu">×</button>
+    </div>
+    <nav>
+      <button data-section="inicio">⌂ Inicio</button>
+      <button data-section="agenda">📅 Agenda</button>
+      <button data-section="misas">⛪ Misas</button>
+      <button data-section="comunidades">🤝 Comunidades</button>
+      <button data-section="catequesis">📖 Catequesis</button>
+      <button data-section="caritas">❤️ Cáritas</button>
+      <button data-section="noticias">📰 Noticias</button>
+      <button data-section="oracion">🙏 Oración</button>
+      <button data-section="contacto">📍 Contacto</button>
+    </nav>
+    <p class="version">Primera versión · 2026</p>
+  </aside>
+
+  <main id="app">
+    <section class="hero">
+      <div class="hero-photo">
+        <div class="hero-overlay">
+          <span class="eyebrow">PARROQUIA</span>
+          <h1>San Juan Bosco</h1>
+          <p>San Martín · San Juan</p>
+        </div>
+      </div>
+      <div class="welcome">
+        <span class="cross">✝</span>
+        <div>
+          <h2>Bienvenidos</h2>
+          <p>Una comunidad que camina junta, anuncia a Jesús y sirve a los hermanos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-grid">
+      <button class="quick-card" data-section="misas"><span>⛪</span><b>Horarios de Misa</b><small>Ver celebraciones</small></button>
+      <button class="quick-card" data-section="agenda"><span>📅</span><b>Agenda</b><small>Actividades parroquiales</small></button>
+      <button class="quick-card" data-section="comunidades"><span>🤝</span><b>Comunidades</b><small>Conocé cada capilla</small></button>
+      <button class="quick-card" data-section="oracion"><span>🙏</span><b>Oración</b><small>Evangelio y meditación</small></button>
+    </section>
+
+    <section class="section-card">
+      <div class="section-title"><span>📌</span><div><span class="eyebrow dark">PARA HOY</span><h2>Lo que podés encontrar</h2></div></div>
+      <div class="today-list">
+        <button data-section="misas">⛪ Consultar dónde y cuándo hay Misa <span>›</span></button>
+        <button data-section="comunidades">🤝 Conocer nuestras comunidades <span>›</span></button>
+        <button data-section="catequesis">📖 Encontrar información de Catequesis <span>›</span></button>
+        <button data-section="caritas">❤️ Conocer la tarea de Cáritas <span>›</span></button>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-title"><span>✨</span><div><span class="eyebrow dark">CAMINO DE FE</span><h2>Un espacio para rezar</h2></div></div>
+      <blockquote>“Permanezcan en mi amor.”<cite>Juan 15, 9</cite></blockquote>
+      <button class="primary" data-section="oracion">Ir a Oración y Evangelio</button>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Parroquia San Juan Bosco</strong><br>San Martín, San Juan</div>
+    <button data-section="contacto">Contacto →</button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

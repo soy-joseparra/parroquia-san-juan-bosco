@@ -1,0 +1,18 @@
+{
+  "name": "Parroquia San Juan Bosco — San Martín",
+  "short_name": "San Juan Bosco",
+  "description": "Aplicación parroquial de San Juan Bosco, San Martín, San Juan.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f8f6f0",
+  "theme_color": "#1d3557",
+  "lang": "es-AR",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
